@@ -1,0 +1,70 @@
+main {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    margin: 0 0 0 0;
+}
+
+header {
+    text-align: center;
+}
+
+.title {
+    padding-top: 16px;
+    font-size: 3em;
+}
+
+.youtube-input {
+    width: 40%;
+    height: 22px;
+    padding: 6px;
+    background-color: darkslategrey;
+    color: lightgray;
+    font-size: 16px;
+    border-radius: 16px;
+    margin: 26px;
+} 
+
+.btn {
+    width: 80px;
+    padding: 10px;
+    text-align: center;
+    background-color: greenyellow;
+    color: blueviolet;
+    border: none;
+    border-radius: 6px;
+    margin: 12px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(105, 134, 46);
+}
+
+.btn:active {
+    background-color: green;
+}
+
+.youtube-input::placeholder {
+    color: gray;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 48% 48%;
+    grid-gap: 1%;
+    justify-content: center;
+}

@@ -1,0 +1,46 @@
+.player {
+    background-color: rgb(31, 31, 31);
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 16px;
+}
+
+.player > .title {
+    width: 100%;
+    font-weight: bold;
+}
+
+.player > .content {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: calc(100% - 16px);
+    background-color: rgb(12, 12, 12);
+    border-radius: 8px;
+    margin: 16px;
+}
+
+.spinner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
+
+.spinner > div {
+    text-align: center;
+}
+
+.error-msg {
+    display: block;
+    font-size: 24px;
+    color: red;
+    font-style: italic;
+    margin: auto;
+}
