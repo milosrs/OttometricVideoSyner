@@ -12,3 +12,8 @@ export const selectSeek = createSelector(
     selectVideo,
     (video: State) => video.playbackTime,
 )
+
+export const selectMaster = createSelector(
+    selectVideo,
+    (video: State) => video.master,
+)

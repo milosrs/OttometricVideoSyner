@@ -6,7 +6,7 @@ import { playAll, stopAll } from "./state/slice";
 
 
 export const App = () => {
-    const [link, setLink] = useState('https://www.youtube.com/watch?v=Et_3Bd1zmvY');
+    const [link, setLink] = useState('https://www.youtube.com/watch?v=cd7fEl_Bnw0');
     const dispatch = useDispatch();
 
     return (
@@ -14,6 +14,7 @@ export const App = () => {
             <header>
                 <div className="title">Welcome to Ottometric Video Syncer</div>
                 <h4>Choose a youtube video URL and you'll see the contents on the viewports</h4>
+                <p>Suggestion: https://www.youtube.com/watch?v=cd7fEl_Bnw0</p>
             </header>
 
             <div className="container" style={{height: '80%'}}>
@@ -30,7 +31,7 @@ export const App = () => {
                         type="button"
                         className="btn" 
                         onClick={() => {
-                            dispatch(playAll());
+                            dispatch(playAll(1));
                         }}>
                         Play both
                         </button>
@@ -45,8 +46,8 @@ export const App = () => {
                 </div>
                 <div className="container" style={{height: '80%', width: '100%'}}>
                     <div className="player-container">
-                        <VideoPlayer title="Video feed 1" url={link}/>
-                        <VideoPlayer title="Video feed 2" url={link}/>
+                        <VideoPlayer title="Video feed 1" url={link} id={1}/>
+                        <VideoPlayer title="Video feed 2" url={link} id={2}/>
                     </div>
                 </div>
             </div>
