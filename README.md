@@ -1,2 +1,2 @@
-# OttometricVideoSyner
-Sync 2 Videos
+# VideoSyner
+Sync 2 Youtube Videos
